@@ -67,6 +67,17 @@ button {
 img {
   max-width: 100%; }
 
+/*
+<div class="row justify-content-center mb-5">
+                    <div class="col-lg-7 col-md-9 col-12">
+                        <div class="common_heading text-center">
+                            <h6 class="muddy fsb text-uppercase">TOP FEATURES</h6>
+                            <h3 class="f-52 fb dark">What <span class="italic orange">Services</span> Provde </h3>
+                        </div>
+                    </div>
+                </div>
+
+*/
 /******** Font Size  ********/
 h2 {
   font-size: 100px; }
@@ -178,6 +189,12 @@ p {
 
 .offwhite_bg {
   background: var(--offwhite); }
+
+.gray {
+  color: var(--gray); }
+
+.gray_bg {
+  background: var(--gray); }
 
 .white {
   color: white; }
@@ -1209,7 +1226,8 @@ p {
   font-size: 15px; }
 
 .quickview {
-  text-align: end; }
+  text-align: end;
+  cursor: pointer; }
   .quickview span {
     color: var(--dark);
     -webkit-transform: rotate(45deg);
@@ -1228,6 +1246,7 @@ p {
     opacity: 0;
     display: block; }
 
+/***** portfolio part ******/
 /*********************************************************************************************************************************************************************************************************/
 /***** education experience part ******/
 .edu_ex_content h2 {
