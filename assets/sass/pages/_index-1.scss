@@ -71,7 +71,46 @@
 }
 
 /***** portfolio part ******/
-
+.portfolio_item {
+  &:hover {
+    .por_img {
+      span {
+        visibility: visible;
+        opacity: 1;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .por_content {
+      h4 {
+        color: var(--orange);
+      }
+    }
+  }
+}
+.por_img {
+  span {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 30px;
+    font-size: 20px;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    &:hover {
+      i {
+        color: var(--orange);
+        animation: 0.4s toTopFromBottom1 forwards;
+      }
+    }
+    i {
+      transform: rotate(45deg);
+    }
+  }
+}
 /*********************************************************************************************************************************************************************************************************/
 
 /***** education experience part ******/

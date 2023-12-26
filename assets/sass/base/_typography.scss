@@ -175,3 +175,13 @@ p {
     transition: var(--transition);
   }
 }
+
+.center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tran {
+  transition: var(--transition);
+}

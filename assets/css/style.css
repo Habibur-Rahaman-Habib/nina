@@ -235,6 +235,22 @@ p {
     -o-transition: var(--transition);
     transition: var(--transition); }
 
+.center {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.tran {
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition); }
+
 .m-17 {
   margin: 17px;
   border-radius: 25px; }
@@ -1247,6 +1263,37 @@ p {
     display: block; }
 
 /***** portfolio part ******/
+.portfolio_item:hover .por_img span {
+  visibility: visible;
+  opacity: 1;
+  width: 60px;
+  height: 60px; }
+
+.portfolio_item:hover .por_content h4 {
+  color: var(--orange); }
+
+.por_img span {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 30px;
+  font-size: 20px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden; }
+  .por_img span:hover i {
+    color: var(--orange);
+    -webkit-animation: 0.4s toTopFromBottom1 forwards;
+    animation: 0.4s toTopFromBottom1 forwards; }
+  .por_img span i {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
 /*********************************************************************************************************************************************************************************************************/
 /***** education experience part ******/
 .edu_ex_content h2 {
