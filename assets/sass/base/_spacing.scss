@@ -1,0 +1,182 @@
+.m-17 {
+  margin: 17px;
+  border-radius: 25px;
+  @media (max-width: 1199px) {
+    margin: 13px;
+  }
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
+}
+.mlr-17 {
+  margin: 0px 17px;
+  border-radius: 25px;
+  @media (max-width: 1199px) {
+    margin: 0 13px;
+  }
+  @media (max-width: 768px) {
+    margin: 0 10px;
+  }
+}
+
+.ptb-110 {
+  padding: 110px 0;
+  @include screen-1600 {
+    padding: 100px 0;
+  }
+  @media (max-width: 1300px) {
+    padding: 80px 0;
+  }
+  @include screen-1199 {
+    padding: 60px 0;
+  }
+  @include screen-768 {
+    padding: 50px 0;
+  }
+}
+
+.pt-110 {
+  padding-top: 110px;
+  @include screen-1600 {
+    padding-top: 100px;
+  }
+  @media (max-width: 1300px) {
+    padding-top: 80px;
+  }
+  @include screen-1199 {
+    padding-top: 60px;
+  }
+  @include screen-768 {
+    padding-top: 50px;
+  }
+}
+
+.pb-110 {
+  padding-bottom: 110px;
+  @include screen-1600 {
+    padding-bottom: 100px;
+  }
+  @media (max-width: 1300px) {
+    padding-bottom: 80px;
+  }
+  @include screen-1199 {
+    padding-bottom: 60px;
+  }
+  @include screen-768 {
+    padding-bottom: 50px;
+  }
+}
+
+/****************************************************/
+.pr-75 {
+  padding-right: 75px;
+  @include screen-1600 {
+    padding-right: 60px;
+  }
+  @include screen-1400 {
+    padding-right: 50px;
+  }
+  @include screen-1199 {
+    padding-right: 30px;
+  }
+  @include screen-575 {
+    padding-right: 10px;
+  }
+}
+
+.pl-75 {
+  padding-left: 75px;
+  @include screen-1600 {
+    padding-left: 60px;
+  }
+  @include screen-1400 {
+    padding-left: 50px;
+  }
+  @include screen-1199 {
+    padding-left: 30px;
+  }
+  @include screen-575 {
+    padding-left: 10px;
+  }
+}
+
+.mtb-110 {
+  margin: 110px 0;
+  @include screen-1600 {
+    margin: 100px 0;
+  }
+  @include screen-1400 {
+    margin: 80px 0;
+  }
+}
+
+.ptb-75 {
+  padding: 75px 0;
+  @include screen-1199 {
+    padding: 50px 0;
+  }
+  @include screen-768 {
+    padding: 30px 0;
+  }
+}
+.ptb-50 {
+  padding: 50px 0;
+  @include screen-1199 {
+    padding: 40px 0;
+  }
+  @include screen-768 {
+    padding: 30px 0;
+  }
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+  @include screen-1199 {
+    padding-bottom: 40px;
+  }
+  @include screen-768 {
+    padding-bottom: 30px;
+  }
+}
+
+.pb-75 {
+  padding-bottom: 75px;
+  @include screen-1199 {
+    padding-bottom: 50px;
+  }
+  @include screen-768 {
+    padding-bottom: 30px;
+  }
+}
+.pt-75 {
+  padding-top: 75px;
+  @include screen-1199 {
+    padding-top: 50px;
+  }
+  @include screen-768 {
+    padding-top: 30px;
+  }
+}
+
+.pt-315 {
+  padding-top: 315px;
+  @media (max-width: 1343px) and (min-width: 1152px) {
+    padding-top: 350px;
+  }
+  @media (max-width: 1151px) {
+    padding-top: 150px;
+  }
+  @media (max-width: 855px) {
+    padding-top: 100px;
+  }
+}
+
+.pb-250 {
+  padding-bottom: 250px;
+  @include screen-1199 {
+    padding-bottom: 150px;
+  }
+  @include screen-992 {
+    padding-bottom: 50px;
+  }
+}

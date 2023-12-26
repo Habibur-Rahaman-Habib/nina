@@ -1,0 +1,128 @@
+.blog_img_slider {
+  .slick-list {
+    border-radius: 10px;
+  }
+  .slick-arrow {
+    color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--dark);
+    font-size: 17px;
+    transform: translateY(-50%);
+    transition: var(--transition);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include screen-992 {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .prev-arrow {
+    left: -30px;
+    @include screen-992 {
+      left: 0;
+    }
+  }
+  .next-arrow {
+    right: -30px;
+    @include screen-992 {
+      right: 0;
+    }
+  }
+}
+
+.blog_content_wrap {
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25%;
+  padding: 25px 50px;
+  @include screen-1199 {
+    width: 70%;
+  }
+  @include screen-992 {
+    position: inherit;
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+.portfolio_button2 {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  @include screen-768 {
+    justify-content: center;
+  }
+  button {
+    font-weight: 600;
+    color: white;
+    transition: var(--transition);
+    font-size: 17px;
+    &.active {
+      color: var(--muddy);
+    }
+    &:hover {
+      color: var(--muddy);
+    }
+  }
+}
+.blog_search {
+  form {
+    input {
+      background: var(--light-dark);
+      border: 0;
+      color: white;
+      width: 100%;
+    }
+    button {
+      border: 0;
+      outline: 0;
+      background: none;
+      color: white;
+    }
+  }
+}
+
+.paginations {
+  .banner_item {
+    ul {
+      li {
+        &.active {
+          a {
+            background: var(--muddy);
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog_single_share {
+  ul {
+    @media (max-width: 350px) {
+      gap: 5px;
+      li {
+        a {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+
+.new_article {
+  h1 {
+    transition: var(--transition);
+    &:hover {
+      color: var(--muddy);
+    }
+  }
+}

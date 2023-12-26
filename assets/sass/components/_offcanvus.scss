@@ -1,0 +1,129 @@
+.header_toggle_btn {
+  vertical-align: middle;
+  &:active {
+    border-color: transparent !important;
+  }
+  &:hover {
+    span {
+      &:not(:nth-child(2)) {
+        width: 15px;
+      }
+    }
+  }
+  span {
+    width: 27px;
+    height: 3px;
+    background: var(--light_dark);
+    display: block;
+    transition: var(--transition);
+    & + span {
+      margin-top: 5px;
+    }
+  }
+}
+
+/************** Mobile Menu **************/
+.mobile-menu .btn-close {
+  position: absolute;
+  right: 25px;
+  background-color: var(--orange);
+  opacity: 1;
+  padding: 5px;
+  top: 23px;
+  background-size: 12px;
+}
+
+.mobile_dropdown {
+  margin-top: 40px;
+}
+.mobile_dropdown li h2 .accordion-button {
+  background: var(--light-dark) !important;
+  color: var(--dark) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  &:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+.mobile_dropdown li h2 a {
+  display: block;
+  padding: var(--bs-accordion-btn-padding-y);
+  font-size: 1rem;
+  color: var(--dark);
+  background-color: var(--light-dark);
+  -webkit-transition: var(--bs-accordion-transition);
+  -o-transition: var(--bs-accordion-transition);
+  transition: var(--bs-accordion-transition);
+  font-weight: 400;
+  padding-left: 0;
+}
+.mobile_dropdown li .accordion-body {
+  padding: 0;
+}
+.mobile_dropdown li .accordion-body ul li + li {
+  border-top: 1px solid var(--gray) !important;
+}
+.mobile_dropdown li .accordion-body ul li a {
+  display: block;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--dark);
+  background-color: var(--light-dark);
+  -webkit-transition: var(--bs-accordion-transition);
+  -o-transition: var(--bs-accordion-transition);
+  transition: var(--bs-accordion-transition);
+  font-weight: 400;
+}
+.mobile_dropdown li button:not(.collapsed) {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.mobile_dropdown li button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23ffffff%7D%3C/style%3E%3Cpath d='M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
+  background-color: var(--dark);
+  width: 20px;
+  height: 20px;
+  background-size: 15px 15px;
+  background-position: center center;
+}
+.mobile_dropdown li button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23ffffff%7D%3C/style%3E%3Cpath d='M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
+  background-color: var(--dark);
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  background-color: transparent !important;
+}
+
+/************** Right offcanvas Menu **************/
+.offcanvas-body {
+  .ht_social {
+    li {
+      a {
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+        background: var(--white);
+        color: var(--dark);
+        border: 1px solid var(--gray);
+        &:hover {
+          color: var(--white);
+        }
+        &::before {
+          background: var(--orange);
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+/******** Font Size  ********/
+h2 {
+  font-size: 100px;
+  @media (max-width: 1199px) {
+    font-size: 80px;
+  }
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  font-size: 60px;
+  @media (max-width: 1199px) {
+    font-size: 55px;
+  }
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
+}
+
+h4 {
+  font-size: 30px;
+  @media (max-width: 1199px) {
+    font-size: 25px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+  @media (max-width: 1199px) {
+    font-size: 20px;
+  }
+}
+h6 {
+  font-size: 18px;
+  @media (max-width: 1199px) {
+    font-size: 17px;
+  }
+}
+
+p {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.f-52 {
+  font-size: 52px;
+  @media (max-width: 1199px) {
+    font-size: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 35px;
+  }
+}
+
+.f-26 {
+  font-size: 26px;
+  @media (max-width: 1199px) {
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+/******** Font Weight ********/
+.fl {
+  font-weight: 300;
+}
+.fr {
+  font-weight: 400;
+}
+.fm {
+  font-weight: 500;
+}
+.fsb {
+  font-weight: 600;
+}
+.fb {
+  font-weight: 700;
+}
+.feb {
+  font-weight: 800;
+}
+
+/******** Color ********/
+.dark {
+  color: var(--dark);
+}
+.dark_bg {
+  background: var(--dark);
+}
+
+.ldark {
+  color: var(--light_dark);
+}
+.ldark_bg {
+  background: var(--light_dark);
+}
+
+.orange {
+  color: var(--orange);
+}
+.orange_bg {
+  background: var(--orange);
+}
+
+.muddy {
+  color: var(--muddy);
+}
+.muddy_bg {
+  background: var(--muddy);
+}
+
+.offwhite {
+  color: var(--offwhite);
+}
+.offwhite_bg {
+  background: var(--offwhite);
+}
+.white {
+  color: white;
+}
+.white_bg {
+  background: white;
+}
+
+/******** custom class ********/
+.italic {
+  font-family: var(--play);
+  font-style: italic;
+}
+
+.bt {
+  border-top: 1px solid var(--dark);
+}
+.bb {
+  border-bottom: 1px solid var(--dark);
+}
+.text-justify {
+  text-align: justify;
+}
+
+.slider-spacing {
+  .slick-list {
+    margin: 0 -12px;
+    .slick-slide {
+      margin: 0 12px;
+    }
+  }
+}
+
+.img {
+  overflow: hidden;
+  &:hover {
+    img {
+      transform: scale(1);
+    }
+  }
+  img {
+    transform: scale(1.1);
+    transition: var(--transition);
+  }
+}
