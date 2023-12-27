@@ -204,6 +204,21 @@
             });
     });
 
+    //11. service hover function
+    $(".service_item").each(function () {
+
+        $(this).hover(function () {
+            $(this).parents(".service_item_box").find(".service_item.active").removeClass("active");
+            $(this).addClass("active");
+            var case_active = $(this).data("case");
+
+            $(".service_item_box img.active").removeClass("active");
+            $(".service_item_box ." + case_active + "").addClass("active");
+        });
+
+    });
+
+
 
 })(jQuery)
 

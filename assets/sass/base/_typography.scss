@@ -138,6 +138,14 @@ p {
   background: white;
 }
 
+.lightext {
+  color: var(--light_text);
+}
+
+.get_bg {
+  background: #080808;
+}
+
 /******** custom class ********/
 .italic {
   font-family: var(--play);
@@ -150,6 +158,14 @@ p {
 .bb {
   border-bottom: 1px solid var(--dark);
 }
+
+.btg {
+  border-top: 1px solid var(--light_text);
+}
+.bbg {
+  border-bottom: 1px solid var(--light_text);
+}
+
 .text-justify {
   text-align: justify;
 }

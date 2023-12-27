@@ -13,9 +13,10 @@
   font-weight: 700;
   border-radius: 6px;
   transition: 0.5s;
-  img {
+  i {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
+    transform: rotate(45deg);
   }
   span {
     position: absolute;
@@ -29,12 +30,13 @@
     opacity: 1;
   }
   &:hover {
+    color: var(--white);
     span {
       width: 225%;
       height: 562.5px;
     }
-    img {
-      animation: 0.4s toTopFromBottom forwards;
+    i {
+      animation: 0.4s toTopFromBottom1 forwards;
     }
   }
 }
