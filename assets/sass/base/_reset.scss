@@ -12,7 +12,7 @@ body {
 input {
   outline: none;
   &:focus-visible {
-    outline: 1px solid var(--text);
+    outline: 1px solid var(--light_text);
   }
 }
 

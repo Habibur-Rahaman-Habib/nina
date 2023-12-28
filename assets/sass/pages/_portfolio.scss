@@ -1,26 +1,64 @@
-.about_project {
-  p {
-    text-align: justify;
+.portfolio_button {
+  width: 700px;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  button {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 7px;
+    transition: var(--transition);
+    & + button {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 85%;
+        background: var(--light_text);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include screen-768 {
+          display: none;
+        }
+      }
+    }
+    &:hover {
+      color: var(--white);
+      background: var(--orange);
+    }
+    &.active {
+      color: var(--white);
+      background: var(--orange);
+    }
   }
 }
 
-.banner_item2 {
-  ul {
-    li {
-      &:hover {
-        a {
-          &::before {
-            background: white;
-          }
-        }
+.pd_social {
+  li {
+    a {
+      &::before {
+        background: var(--orange);
       }
-      a {
-        border-radius: 50% !important;
-        position: relative;
-        background: var(--muddy);
-        &::before {
-          border-radius: 50% !important;
-        }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.pagi {
+  li {
+    p {
+      cursor: pointer;
+      transition: var(--transition);
+      &:hover {
+        color: var(--orange);
       }
     }
   }

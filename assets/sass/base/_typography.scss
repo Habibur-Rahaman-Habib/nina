@@ -146,6 +146,10 @@ p {
   background: #080808;
 }
 
+.text {
+  color: var(--text);
+}
+
 /******** custom class ********/
 .italic {
   font-family: var(--play);
@@ -166,7 +170,7 @@ p {
   border-bottom: 1px solid var(--light_text);
 }
 
-.text-justify {
+.justify {
   text-align: justify;
 }
 

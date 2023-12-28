@@ -24,11 +24,13 @@
         color: var(--orange);
       }
       &:hover::before {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1);
         visibility: visible;
         opacity: 1;
       }
       &::before {
+        left: 50%;
+        top: 50%;
         content: "";
         position: absolute;
         width: 100%;
@@ -36,7 +38,7 @@
         background: var(--white);
         border-radius: 50%;
         transition: var(--transition);
-        transform: scale(0.5);
+        transform: translate(-50%, -50%) scale(0.5);
         visibility: hidden;
         opacity: 0;
         z-index: -1;

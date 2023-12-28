@@ -1,0 +1,24 @@
+.breadcum {
+  padding: 140px 0;
+  text-align: center;
+  @include screen-1199 {
+    padding: 100px 0;
+  }
+  ul {
+    li {
+      font-size: 18px;
+      font-weight: 500;
+      &:hover {
+        a {
+          color: var(--orange);
+        }
+      }
+      a {
+        color: white;
+        transition: var(--transition);
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
