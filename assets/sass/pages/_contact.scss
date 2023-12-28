@@ -1,21 +1,33 @@
-.arrow_icon {
-  span {
-    width: 40px;
-    height: 80px;
-    border-radius: 30px;
-    border: 1px solid white;
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.f_contact {
+  padding: 30px;
+  border-radius: 5px;
+  background: var(--dark);
+  p {
+    margin-bottom: 12px;
+    color: var(--light_text);
   }
-}
-
-.contact_img {
-  border-radius: 10px;
-  border: 10px solid var(--dark);
-  outline: 5px solid white;
-  img {
-    border-radius: 10px;
+  a {
+    &:hover {
+      h6 {
+        color: var(--orange);
+      }
+    }
+    h6 {
+      color: white;
+      transition: var(--transition);
+    }
+  }
+  ul {
+    gap: 15px;
+    margin-top: 8px;
+    li {
+      a {
+        color: white;
+        transition: var(transition);
+        &:hover {
+          color: var(--orange);
+        }
+      }
+    }
   }
 }

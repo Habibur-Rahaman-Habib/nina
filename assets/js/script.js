@@ -30,59 +30,50 @@
     });
 
     //2. Preloader
-    // setTimeout(() => {
-    //     $('.preloader').fadeOut()
-    // }, 2000);
+    setTimeout(() => {
+        $('.preloader').fadeOut()
+    }, 2000);
 
     // 3. page  slider
-    /********* testimonial slider **************/
-    $(".testi_wrap").slick({
-        slidesToShow: 1,
-        arrows: false,
-        dots: true,
-        customPaging: function (slider, i) {
-            return '<span></span>';
-        },
-    });
 
-    /********* blog page slider **************/
+    /********* Testimonial  slider **************/
     $(".blog_img_slider").slick({
         slidesToShow: 1,
         asNavFor: ".blog_content_slider",
         arrows: true,
-        prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-arrow-left-long"></i></button>',
-        nextArrow: '<button class="next-arrow"><i class="fa-solid fa-arrow-right-long"></i></button>',
+        prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
     });
 
     $(".blog_content_slider").slick({
-        slidesToShow: 1,
+        slidesToShow: 5,
         focusOnSelect: true,
         arrows: false,
         asNavFor: ".blog_img_slider",
-    });
-
-    /********* work slider **************/
-    $('.work_slider').slick({
         centerMode: true,
-        slidesToShow: 3,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 1290,
+                breakpoint: 1400,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 4,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 450,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 3,
                 }
             },
+            {
+                breakpoint: 350,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+
         ]
     });
+
 
     /********* brand slider **************/
     $(".brand_slider").slick({
@@ -173,19 +164,12 @@
     $(window).scroll(function () {
 
         if ($(window).scrollTop() > 200) {
-            $('.header').addClass('fixed_menu');
+            $('.header_bottom').addClass('fixed_menu');
         } else {
-            $('.header').removeClass('fixed_menu');
+            $('.header_bottom').removeClass('fixed_menu');
         }
     });
 
-    //9. counter UP
-    $(document).ready(function () {
-        $('.count').counterUp({
-            delay: 10,
-            time: 1500
-        });
-    });
 
     //10. Button Hover JS
     $(function () {
@@ -218,6 +202,14 @@
 
     });
 
+
+    //9. counter UP
+    $(document).ready(function () {
+        $('.count').counterUp({
+            delay: 10,
+            time: 1500
+        });
+    });
 
 
 })(jQuery)

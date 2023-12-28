@@ -278,6 +278,9 @@ p {
   -o-transition: var(--transition);
   transition: var(--transition); }
 
+.inherit {
+  position: inherit; }
+
 .m-17 {
   margin: 17px;
   border-radius: 25px; }
@@ -814,7 +817,6 @@ p {
 /************  Header end  ***********/
 /* for sticky header */
 .fixed_menu {
-  background: var(--dark);
   -webkit-animation: sticky 1s;
   animation: sticky 1s;
   -webkit-transition: 0.2s;
@@ -823,7 +825,11 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 77; }
+  z-index: 77;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 @-webkit-keyframes sticky {
   0% {
@@ -1365,6 +1371,13 @@ p {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
 
+.por_content h5 {
+  border: 1px solid var(--dark);
+  width: 100px;
+  text-align: center;
+  border-radius: 51%;
+  padding: 4px; }
+
 /***** skill part ******/
 .skill_item .nav-tabs {
   -webkit-box-pack: justify;
@@ -1505,6 +1518,74 @@ p {
     left: -19px; }
 
 /***** Testimonial part ******/
+.blog_content_slider .slick-list {
+  padding: 0 !important; }
+  .blog_content_slider .slick-list .slick-track .slick-slide .blog_content img {
+    border-radius: 50%;
+    height: auto; }
+  .blog_content_slider .slick-list .slick-track .slick-slide.slick-center .blog_content img {
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    height: auto; }
+
+.testimoni_item {
+  gap: 40px !important; }
+  @media (max-width: 991.98px) {
+    .testimoni_item {
+      gap: 20px !important;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.testi_q {
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+.testi_content h5 {
+  text-align: justify;
+  font-weight: 600;
+  margin-bottom: 40px; }
+
+.blog_img_slider .slick-arrow {
+  color: white;
+  position: absolute;
+  top: 12%;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--dark);
+  font-size: 17px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .blog_img_slider .slick-arrow:hover {
+    background: var(--orange); }
+  @media (max-width: 991.98px) {
+    .blog_img_slider .slick-arrow {
+      width: 50px;
+      height: 50px; } }
+
+.blog_img_slider .prev-arrow {
+  right: 70px; }
+  @media (max-width: 991.98px) {
+    .blog_img_slider .prev-arrow {
+      right: 40; } }
+
+.blog_img_slider .next-arrow {
+  right: 0px; }
+
 /***** clients part ******/
 .brand_slider .slick-track {
   display: -webkit-box;
@@ -1649,28 +1730,30 @@ p {
     height: 65px;
     border-radius: 6px; }
 
-.arrow_icon span {
-  width: 40px;
-  height: 80px;
-  border-radius: 30px;
-  border: 1px solid white;
-  color: white;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.contact_img {
-  border-radius: 10px;
-  border: 10px solid var(--dark);
-  outline: 5px solid white; }
-  .contact_img img {
-    border-radius: 10px; }
+.f_contact {
+  padding: 30px;
+  border-radius: 5px;
+  background: var(--dark); }
+  .f_contact p {
+    margin-bottom: 12px;
+    color: var(--light_text); }
+  .f_contact a:hover h6 {
+    color: var(--orange); }
+  .f_contact a h6 {
+    color: white;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition); }
+  .f_contact ul {
+    gap: 15px;
+    margin-top: 8px; }
+    .f_contact ul li a {
+      color: white;
+      -webkit-transition: var(transition);
+      -o-transition: var(transition);
+      transition: var(transition); }
+      .f_contact ul li a:hover {
+        color: var(--orange); }
 
 .blog_single:hover h4 span {
   background-size: 100% 100%; }

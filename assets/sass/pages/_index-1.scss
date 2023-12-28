@@ -161,6 +161,16 @@
   }
 }
 
+.por_content {
+  h5 {
+    border: 1px solid var(--dark);
+    width: 100px;
+    text-align: center;
+    border-radius: 51%;
+    padding: 4px;
+  }
+}
+
 /***** skill part ******/
 .skill_item {
   .nav-tabs {
@@ -299,6 +309,81 @@
 }
 
 /***** Testimonial part ******/
+.blog_content_slider {
+  .slick-list {
+    padding: 0 !important;
+    .slick-track {
+      .slick-slide {
+        .blog_content {
+          img {
+            border-radius: 50%;
+            height: auto;
+          }
+        }
+        &.slick-center {
+          .blog_content {
+            img {
+              border: 2px solid var(--orange);
+              border-radius: 50%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.testimoni_item {
+  gap: 40px !important;
+  @include screen-992 {
+    gap: 20px !important;
+    flex-wrap: wrap;
+  }
+}
+.testi_q {
+  flex-shrink: 0;
+}
+.testi_content {
+  h5 {
+    text-align: justify;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
+.blog_img_slider {
+  .slick-arrow {
+    color: white;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--dark);
+    font-size: 17px;
+    transform: translateY(-50%);
+    transition: var(--transition);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background: var(--orange);
+    }
+    @include screen-992 {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .prev-arrow {
+    right: 70px;
+    @include screen-992 {
+      right: 40;
+    }
+  }
+  .next-arrow {
+    right: 0px;
+  }
+}
 
 /***** clients part ******/
 .brand_slider {
