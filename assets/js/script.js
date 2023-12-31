@@ -43,7 +43,18 @@
         arrows: true,
         prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
         nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
-    });
+        dots: true,
+        dotsClass: 'slider-paging-number',
+        customPaging: function (slick, index) {
+            return (index + 1) + ' ' + '/' + slick.slideCount;
+        }
+    })
+        .on('afterChange', function (event, slick, currentSlide) {
+            $(this).find('*[role="tablist"]').find('li').eq(0).text(slick.options.customPaging.call(this, slick, currentSlide));
+
+        });
+
+
 
     $(".blog_content_slider").slick({
         slidesToShow: 5,
@@ -210,7 +221,6 @@
             time: 1500
         });
     });
-
 
 })(jQuery)
 

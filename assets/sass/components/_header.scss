@@ -136,6 +136,9 @@
     }
   }
   .header_search {
+    border: 1px solid var(--light_text);
+    padding: 13px 9px;
+    border-radius: 5px;
     .search-btn {
       color: var(--white);
       transition: var(--transition);
@@ -173,6 +176,92 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+// banner image topltip
+.banner_right {
+  .signal1 {
+    right: calc(0% + 20%);
+    top: 20px;
+    @include screen-575 {
+      display: none;
+    }
+    &:hover {
+      .round {
+        background: var(--orange);
+      }
+      .sig_content {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .round {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: white;
+      display: inline-block;
+      border: 6px solid var(--dark);
+      outline: 2px solid white;
+      cursor: pointer;
+      transition: var(--transition);
+      animation: ani_round 2s infinite;
+    }
+    .sig_content {
+      position: absolute;
+      top: 150%;
+      width: max-content;
+      padding: 15px 30px;
+      border-radius: 8px;
+      gap: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: var(--transition);
+      visibility: hidden;
+      opacity: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: white;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+    }
+    &.signal2 {
+      top: inherit;
+      bottom: 20%;
+      right: 16%;
+      .round {
+        border-color: #a79b88;
+      }
+    }
+
+    &.signal3 {
+      top: 46%;
+      bottom: inherit;
+      right: inherit;
+      left: 27%;
+      transform: translateY(-50%);
+      .round {
+        border-color: #8a8f97;
+      }
+    }
+  }
+}
+
+@keyframes ani_round {
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
+
+  50% {
+    box-shadow: 0 0 0 20px rgba(1, 93, 199, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(1, 93, 199, 0);
+  }
 }
 /************  Header end  ***********/
 
