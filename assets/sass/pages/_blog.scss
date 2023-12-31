@@ -6,6 +6,12 @@
       }
     }
   }
+  p.mb-4 {
+    border: 1px solid var(--dark);
+    border-radius: 25px;
+    display: inline-block;
+    padding: 4px 20px;
+  }
   h4 {
     span {
       width: calc(100%);
@@ -21,6 +27,7 @@
 }
 
 .blog_pagi {
+  background: #ffffff87;
   li {
     cursor: pointer;
     width: 50px;
