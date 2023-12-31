@@ -121,14 +121,20 @@ p {
   color: var(--offwhite);
 }
 .offwhite_bg {
-  background: var(--offwhite);
+  overflow: hidden;
+  background: url("../images/banner/bg2.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .gray {
   color: var(--gray);
 }
 .gray_bg {
-  background: var(--gray);
+  overflow: hidden;
+  background: url("../images/banner/bg1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .white {
