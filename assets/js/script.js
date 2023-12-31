@@ -4,12 +4,13 @@
     1. Scroll top button
     2. Preloader
     3. page slider
-    4. scroll to bottom
-    5. Fancybox
-    6. wow js
-    7. filter
-    8. Header Sticky
-    9. counter UP
+    4. Fancybox
+    5. wow js
+    6. filter
+    7. Header Sticky
+    8. Button Hover js
+    9. Service Hover Function
+    10. counter UP
 
     */
 
@@ -115,29 +116,15 @@
         ]
     });
 
-    //4. scroll to bottom
-    document.addEventListener('DOMContentLoaded', function () {
-        var scrollDownArrow = document.querySelector('.scroll-down-arrow');
-        var section2 = document.querySelector('#section2');
 
-        if (scrollDownArrow && section2) {
-            scrollDownArrow.addEventListener('click', function () {
-                section2.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        }
-    });
-
-
-    //5. Fancybox
+    //4. Fancybox
     Fancybox.bind("[data-fancybox]", {});
 
 
-    //6. wow js
+    //5. wow js
     new WOW().init();
 
-    // 7. filter
+    // 6. filter
     /******* home page 2 filter ******/
     var $grid = $('.portfolio_item_active').isotope({
         itemSelector: '.grid-item',
@@ -171,7 +158,7 @@
         });
     });
 
-    //8. Header Sticky
+    //7. Header Sticky
     $(window).scroll(function () {
 
         if ($(window).scrollTop() > 200) {
@@ -182,7 +169,7 @@
     });
 
 
-    //10. Button Hover JS
+    //8. Button Hover JS
     $(function () {
         $('.default-btn')
             .on('mouseenter', function (e) {
@@ -199,7 +186,7 @@
             });
     });
 
-    //11. service hover function
+    //9. service hover function
     $(".service_item").each(function () {
 
         $(this).hover(function () {
@@ -214,7 +201,7 @@
     });
 
 
-    //9. counter UP
+    //10. counter UP
     $(document).ready(function () {
         $('.count').counterUp({
             delay: 10,
