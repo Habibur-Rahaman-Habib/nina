@@ -644,6 +644,14 @@ p {
 
 /******************************** components ******************************/
 /************  Header start  ***********/
+.header_bottom .container-fluid {
+  padding-left: 35px;
+  padding-right: 35px; }
+  @media (max-width: 1199.98px) {
+    .header_bottom .container-fluid {
+      padding-left: 20px;
+      padding-right: 20px; } }
+
 .ht_follow .line {
   width: 65px;
   height: 1px;

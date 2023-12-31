@@ -1,5 +1,14 @@
 /************  Header start  ***********/
-
+.header_bottom {
+  .container-fluid {
+    padding-left: 35px;
+    padding-right: 35px;
+    @include screen-1199 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
 .ht_follow {
   .line {
     width: 65px;
