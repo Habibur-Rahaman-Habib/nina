@@ -169,8 +169,10 @@
 
 .por_content {
   div.d-flex {
-    flex-direction: column;
-    gap: 15px;
+    @include screen-1260 {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
   h5 {
     border: 1px solid var(--dark);

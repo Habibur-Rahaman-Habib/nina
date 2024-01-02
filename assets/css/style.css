@@ -1488,12 +1488,13 @@ p {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-.por_content div.d-flex {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 15px; }
+@media (max-width: 1260px) {
+  .por_content div.d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 15px; } }
 
 .por_content h5 {
   border: 1px solid var(--dark);
