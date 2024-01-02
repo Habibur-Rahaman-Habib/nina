@@ -142,6 +142,7 @@
     }
   }
 }
+
 .por_img {
   span {
     width: 0px;
@@ -167,6 +168,10 @@
 }
 
 .por_content {
+  div.d-flex {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
   h5 {
     border: 1px solid var(--dark);
     width: 100px;
@@ -378,12 +383,19 @@
     @include screen-992 {
       width: 50px;
       height: 50px;
+      top: 50%;
+    }
+    @include screen-768 {
+      top: 35%;
+    }
+    @include screen-400 {
+      top: 30%;
     }
   }
   .prev-arrow {
     right: 70px;
     @include screen-992 {
-      right: 40;
+      right: 55px;
     }
   }
   .next-arrow {

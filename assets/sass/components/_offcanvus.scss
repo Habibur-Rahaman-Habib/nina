@@ -132,3 +132,17 @@
     }
   }
 }
+
+.offcanvas-backdrop {
+  top: 16px;
+  left: 16px;
+  border-radius: 25px 0 0 0;
+  @media (max-width: 1199px) {
+    top: 13px;
+    left: 13px;
+  }
+  @media (max-width: 768px) {
+    top: 10px;
+    left: 10px;
+  }
+}

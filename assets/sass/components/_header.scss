@@ -123,6 +123,7 @@
             transition: var(--transition);
           }
           & + li {
+            border-color: #e3e3e3 !important;
             a {
               padding-top: 5px;
             }
